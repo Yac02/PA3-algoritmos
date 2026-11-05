@@ -47,4 +47,5 @@ javac codigo/Actividad2\ -\ ClasesFIFO/Actividad2.java
 java codigo/Actividad2\ -\ ClasesFIFO/Actividad2
 
 
-5. Video de exposiciónEnlace a YouTube: [https://youtu.be/Hx3Zj_z-00Q] Nota: En el video, todos los integrantes del equipo participamos con las cámaras prendidas, explicando cómo resolvimos la evaluación y por qué elegimos una pila o una cola en cada caso planteado.   
+5. Video de exposiciónEnlace a YouTube: [https://youtu.be/Hx3Zj_z-00Q] Nota: En el video, todos los integrantes del equipo participamos con las cámaras prendidas, explicando cómo resolvimos la evaluación y por qué elegimos una pila o una cola en cada caso planteado.
+https://youtu.be/Hx3Zj_z-00Q?si=xrzTTRgkNU6eF-gG   

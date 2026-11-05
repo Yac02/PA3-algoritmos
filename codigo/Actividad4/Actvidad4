@@ -1,0 +1,46 @@
+PA3 - Actividad 4: Comparación y argumentación
+
+
+1. Comparación académica entre pila y cola
+
+Criterio	Pila (LIFO)	Cola (FIFO)
+Principio de funcionamiento	Last In, First Out: el último elemento en ingresar es el primero en salir.	First In, First Out: el primer elemento en ingresar es el primero en salir.
+Operaciones principales	push (apilar), pop (desapilar), peek (consultar el tope) e isEmpty (verificar si está vacía).	offer (encolar), poll (desencolar), peek (consultar el frente) e isEmpty (verificar si está vacía).
+Forma de acceso	Se inserta y se retira por un mismo extremo: el tope.	Se inserta por la parte final y se retira por el frente.
+Ventaja principal	Permite recuperar o revertir primero la operación más reciente, respetando el orden inverso de registro.	Permite atender primero lo que llegó antes, manteniendo un orden de servicio consistente.
+Aplicación al caso académico	Historial de cambios de matrícula, horario o datos del estudiante que deben deshacerse.	Solicitudes de constancias, certificados o consultas que deben atenderse por orden de llegada.
+
+
+2. Ejemplo de funcionamiento
+
+Pila (LIFO): en la unidad de servicios académicos se registran tres acciones:
+1. Registrar matrícula.
+2. Modificar horario.
+3. Actualizar datos del estudiante.
+Si se ejecuta deshacer, se revierte primero actualizar datos del estudiante, porque fue la última acción registrada.
+             TOPE
+                                            +-----------------------------+
+                                            | Actualizar datos            |  <-- sale primero
+                                            +-----------------------------+
+                                            | Modificar horario           |
+                                            +-----------------------------+
+                                            | Registrar matricula         |
+                                            +-----------------------------+
+Cola (FIFO): llegan, en este orden, una solicitud de constancia, una de certificado y una consulta de matrícula. Al comenzar la atención, se procesa primero la solicitud de constancia, porque llegó antes.
+                                    FRENTE                                           FINAL
+                                    |                                                |
+                                    v                                                v
+                                    [Constancia]  -->  [Certificado]  -->  [Consulta]
+                                    sale primero                           entra al final
+3. Argumentación técnica
+
+La estructura pila es la más adecuada para el historial de acciones reversibles porque conserva el orden inverso que necesita la operación deshacer. En cambio, una cola desharía primero una acción antigua y podría dejar cambios posteriores sin revertir.
+
+La estructura cola es la más adecuada para las solicitudes académicas porque mantiene el orden de llegada. Emplear una pila en ese flujo priorizaría las solicitudes nuevas sobre las anteriores, lo cual sería contrario a la regla del servicio planteado.
+
+En ambos casos, las operaciones habituales sobre el extremo correspondiente (push, pop, offer, poll) pueden ejecutarse en tiempo O(1) con una implementación apropiada como ArrayDeque en Java.
+4. Conclusión grupal (propuesta para revisar con el equipo)
+Como equipo, concluimos que elegir correctamente entre una pila y una cola es fundamental para resolver de manera ordenada los procesos de la unidad de servicios académicos. La pila, por su principio LIFO, permite deshacer acciones desde la más reciente hasta la más antigua, evitando alterar el orden lógico de los cambios. La cola, por su principio FIFO, garantiza que las solicitudes sean atendidas en el mismo orden en que ingresan, aportando consistencia al servicio. Por lo tanto, la elección de la estructura de datos no depende solamente de almacenar información, sino del orden en que el proceso necesita recuperarla y utilizarla. Esto mejora la claridad del algoritmo, la eficiencia de las operaciones y la adecuación de la solución al problema.
+5. Demostración en Java (complementaria)
+Archivo: [`Actividad4.java`](./Actividad4.java).
+

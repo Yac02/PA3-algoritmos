@@ -1,7 +1,7 @@
 # README — Evaluación PA3
 
 > **Curso:** ALGORITMO Y ESTRUCTURA DE DATOS BASADOS EN INTELIGENCIA ARTIFICIAL  
-> **Código:** 4134.202620  
+> **Código:** 4134.202620
 > **Evaluación:** PA3  
 > **Equipo:** G4
 
@@ -21,15 +21,16 @@
 Una unidad de servicios académicos necesita dos mecanismos distintos: uno para gestionar acciones que deben deshacerse en orden inverso al que fueron registradas y otro para atender solicitudes en el mismo orden en que llegan.
 
 **Objetivo:**  
-Modelar ambos procesos y proponer soluciones mediante estructuras LIFO (pilas) y FIFO (colas). Diseñar algoritmos para apilar, desapilar, encolar y desencolar, seleccionando la estructura más adecuada según el flujo del problema y sustentando la decisión técnica del equipo con argumentos claros[cite: 1].
+Modelar ambos procesos y proponer soluciones mediante estructuras LIFO (pilas) y FIFO (colas). Diseñar algoritmos para apilar, desapilar, encolar y desencolar, seleccionando la estructura más adecuada según el flujo del problema y sustentando la decisión técnica del equipo con argumentos claros.
 
 ## 3. Estructura del repositorio
 
 * 📄 `Informe_PA3_Grupo4.pdf`: Documento principal (Entrega 1) con el desarrollo completo del caso, argumentación técnica, análisis de flujo y representaciones gráficas de LIFO y FIFO.
-* 📁 `/codigo`: Carpeta que contiene los scripts y pseudocódigos de los algoritmos diseñados (apilar, desapilar, encolar, desencolar, etc.).
-  * `Actividad1_Pila.java` 
-  * `Actividad2_Cola.java`
-* 📁 `/diagramas`: Carpeta con las imágenes de las representaciones gráficas de las pilas y colas para el caso propuesto.
+* 📁 `/codigo`: Carpeta que contiene los scripts organizados por carpetas de actividades. Las representaciones gráficas (diagramas) están documentadas mediante esquemas integrados directamente en los comentarios de los códigos fuente:
+  * 📁 `actividad1/` (Implementación de Pila LIFO con diagrama esquemático en código).
+  * 📁 `Actividad2 - ClasesFIFO/` (Implementación de Cola FIFO con diagrama esquemático en código).
+  * 📁 `Actividad3/` (Solución y justificación de situaciones reales).
+  * 📁 `Actividad4/` (Comparación académica y conclusiones grupales).
 * 📄 `README.md`: Documentación principal del repositorio (Entrega 3).
 
 ## 4. Instrucciones de uso
@@ -41,6 +42,9 @@ git clone [https://github.com/Yac02/PA3-algoritmos.git](https://github.com/Yac02
 # 2. Navegar a la carpeta del proyecto
 cd PA3-algoritmos
 
-# 3. Compilar y ejecutar los algoritmos (Ejemplo para Java)
-javac codigo/Actividad1_Pila.java
-java codigo/Actividad1_Pila
+# 3. Compilar y ejecutar los algoritmos (Ejemplo para Actividad 2)
+javac codigo/Actividad2\ -\ ClasesFIFO/Actividad2.java
+java codigo/Actividad2\ -\ ClasesFIFO/Actividad2
+
+
+5. Video de exposiciónEnlace a YouTube: [https://youtu.be/Hx3Zj_z-00Q] Nota: En el video, todos los integrantes del equipo participamos con las cámaras prendidas, explicando cómo resolvimos la evaluación y por qué elegimos una pila o una cola en cada caso planteado.   
